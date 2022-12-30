@@ -17,14 +17,32 @@ html(lang='en')
       .base
         .trigs
           .btns
-            button(onclick='Umbrella.roll("4dF")') 4dF
+            button(onclick='Umbrella.roll("1d2")') 1d2
+            button(onclick='Umbrella.roll("1d4")') 1d4
+            button(onclick='Umbrella.roll("1d6")') 1d6
+            //
+            button(onclick='Umbrella.roll("1d8")') 1d8
+            button(onclick='Umbrella.roll("1d12")') 1d12
+            button(onclick='Umbrella.roll("1d20")') 1d20
+            //
+            button(onclick='Umbrella.roll("1d3")') 1d3
+            button(onclick='Umbrella.roll("1d10")') 1d10
+            button(onclick='Umbrella.roll("1d100")') 1d100
+            //
+            button(onclick='Umbrella.roll("3d6kl2")') 2d6 dis
             button(onclick='Umbrella.roll("2d6")') 2d6
+            button(onclick='Umbrella.roll("3d6k2")') 2d6 avt
+            //
+            button(onclick='Umbrella.roll("6dFkl4")') 4dF dis
+            button(onclick='Umbrella.roll("4dF")') 4dF
+            button(onclick='Umbrella.roll("6dFk4")') 4dF avt
           .imp
             input#theimp
             button(onclick='Umbrella.roll("input")') R!
-          a(
-            href='https://dice-roller.github.io/documentation/guide/notation/',target='blank'
-          ) Notation
+            a(
+              href='https://dice-roller.github.io/documentation/guide/notation/'
+              target='blank'
+            ) Notation
         #res --
       .btnbox
         button.flip(onclick='Umbrella.flip()') Flip
