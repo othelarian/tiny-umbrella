@@ -27,7 +27,7 @@ exports.cfg =
     theme_color: '#000'
     scope: '/tiny-umbrella/'
   static: 'static'
-  version: '1.1.0'
+  version: '1.1.1'
   web:
     html:
       src: ("#{webpath}/#{file}" for file in ['index.pug'])

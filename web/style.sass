@@ -25,6 +25,7 @@ button
   border: solid 2px black
   border-radius: 35px
   padding: 8px
+  max-height: calc(100vh - 20px)
 
 .flip
   display: none
@@ -70,9 +71,15 @@ button
     align-items: center
     justify-content: center
 
-#histo > div
-  border-top: solid 1px black
-  padding: 4px
+#histo
+  margin: 7px auto
+  overflow: auto
+  max-height: calc(100vh - 90px)
+
+  div
+    border-top: solid 1px black
+    padding: 4px
+    background: white
 
 @media (max-width: 700px)
   #col2
