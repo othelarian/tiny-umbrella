@@ -1,0 +1,79 @@
+body
+  display: flex
+  gap: 10px
+  justify-content: center
+
+button
+  border: none
+  background: royalblue
+  font-weight: bold
+  color: white
+  font-size: 14px
+  padding: 7px
+
+  &:hover
+    background: gold
+
+.btnbox
+  display: flex
+  gap: 20px
+  justify-content: center
+
+.cols
+  width: 300px
+  border: solid 2px black
+  border-radius: 35px
+  padding: 8px 10px
+
+.flip
+  display: none
+
+#col1
+  .base
+    display: flex
+    gap: 5px
+    justify-content: center
+    align-items: center
+
+  .trigs
+    max-width: 50%
+
+    .btns
+      display: flex
+      gap: 0
+      justify-content: center
+      flex-wrap: wrap
+
+      button
+        border: solid 1px green
+
+    .imp
+      input
+        width: 108px
+        height: 25px
+        font-size: 15px
+
+  #res
+    border-radius: 20px
+    width: 90px
+    height: 90px
+    background: royalblue
+    margin: 30px
+    color: white
+    font-weight: bold
+    font-size: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+
+#histo > div
+  border-top: solid 1px black
+  padding: 4px
+
+@media (max-width: 700px)
+  #col2
+    display: none
+
+  .flip
+    display: inline-block
+
